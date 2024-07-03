@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>청결 위생관리</title>
+    <style>
+        *{margin:0; padding: 0; box-sizing: border-box;}
+        section{max-width: 600px; margin:auto; border: 5px solid red; position:relative; overflow:hidden}
+        h1{display:none;} 
+        img{width:100%; display:block;}
+        img:not(:first-of-type) {position:absolute; top:0; left:0;}
+
+        img:nth-of-type(2){animation:up 1.5s both;}
+        img:nth-of-type(3){animation:left 2.0s 0.5s both;}
+        img:nth-of-type(4){animation:zigzag 15s both infinite;}
+        img:nth-of-type(5){animation:rotate 3s both infinite;}
+        img:nth-of-type(6){animation:ryoiki 2s 0.5s both infinite alternate;}
+
+        @keyframes up{
+            0% {bottom: 100px; top:initial; opacity: 0;}
+            100% {bottom: 0; top:initial; opacity: 1;}
+        }
+        
+        @keyframes left{
+            0%{right:100px; left:initial; opacity:0;}
+            100% {right:0; left:initial; opacity:1;}
+        }
+
+        @keyframes zigzag{
+            0%{top: 0px; left: 0; opacity:1 ;transform: rotate(0);}  
+            5%{top:-100px; left: 100px; transform: rotate(-60deg);}
+            15.57%{top:-85px; left: 90px; transform: rotate(-40deg);}
+            30%{top:-50px; left: 70px; transform: rotate(-30deg);}
+            50%{top:-50px; left: 70px; transform: rotate(-330deg);}
+            70%{top:-70px; left: 30px; transform: rotate(1030deg);}
+            100%{top:0; left: 0;transform: rotate(0);}  
+        }
+
+        @keyframes rotate{
+            from{transform:rotate(360deg); scale(0); opacity: 0;}
+            to{transfroms:rotate(0); scale(1); opacity: 1;}
+        }
+
+        @keyframes ryoiki{
+            from{left:50px;}
+            to{left:0}
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>청결위생관리 애니메이션</h1>
+        <img src="images/bg2.jpg" alt="배경사진">
+        <img src="images/2-1.png" alt="꽃병">
+        <img src="images/2-2.png" alt="꽃">
+        <img src="images/2-3.png" alt="나비">
+        <img src="images/2-4.png" alt="모래시계">
+        <img src="images/2-5.png" alt="문구">
+    </section>
+</body>
+</html>
